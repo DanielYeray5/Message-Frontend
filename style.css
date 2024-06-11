@@ -1,0 +1,161 @@
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background: rgb(2, 0, 36);
+     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 16, 1) 35%, rgba(0, 212, 255, 1) 100%);
+     height: 100vh;
+}
+
+.container {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 400px;
+     background-color: #ffffff;
+     border: 3px solid rgb(136, 5, 5);
+     border-radius: 13px;
+}
+
+h1 {
+     color: rgb(14, 115, 133);
+     text-align: center;
+     padding-top: 9px;
+     padding-bottom: 35px;
+     border-bottom: 3px solid #bb1049;
+}
+
+.container form {
+     padding: 0 40px;
+     box-sizing: border-box;
+}
+
+form .pedir {
+     position: relative;
+     border-bottom: 2px solid #ff8f5b;
+     margin: 30px 0;
+}
+
+.pedir input {
+     width: 100%;
+     padding: 0 5px;
+     height: 40px;
+     color: rgb(10, 99, 105);
+     font-size: 16px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     border: none;
+     background: none;
+     outline: none;
+}
+
+.pedir label {
+     position: absolute;
+     top: 50%;
+     left: 2%;
+     color: #4d0707;
+     transform: translateY(-50%);
+     font-size: 16px;
+     pointer-events: none;
+     transition: 0.5s;
+}
+
+.pedir input:focus~label,
+.pedir input:not(:placeholder-shown)~label {
+     top: -3px;
+     color: rgb(14, 115, 133);
+}
+
+.pedir span::before {
+     content: ' ';
+     position: absolute;
+     top: 40px;
+     left: 0;
+     width: 100%;
+     height: 2px;
+     background: rgb(10, 15, 83);
+     transition: 0.5s;
+}
+
+.pedir input:focus~span::before,
+.pedir input:not(:placeholder-shown)~span::before {
+     width: 100%;
+}
+
+form button {
+     color: #ffffff;
+     background-color: #4d0707;
+}
+
+.btnPush {
+     width: 100%;
+     color: #ffffff;
+     background-color: #4d0707;
+     margin-bottom: 20px;
+     padding: 7px;
+     border-radius: 15px;
+     font-size: 15px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btnPush:hover {
+     width: 100%;
+     color: #4d0707;
+     background-color: #ffffff;
+     margin-bottom: 20px;
+     padding: 7px;
+     border-radius: 15px;
+     font-size: 15px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.opciones {
+     text-align: center;
+     width: 55%;
+     padding: 7px;
+     margin: 10px;
+     border: 1px solid #ff8f5b;
+     background:none;
+     border-radius: 8px;
+     color: #4d0707;
+}
+
+.inp {
+     text-align: center;
+     width: 25%;
+     margin: 10px;
+     color: rgb(9, 91, 105);
+     background-color: rgb(255, 255, 255);
+     margin-bottom: 10px;
+     padding: 7px;
+     border-radius: 15px;
+     font-size: 15px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inp:hover {
+     text-align: center;
+     width: 25%;
+     margin: 10px;
+     color: #ffffff;
+     background-color: rgb(9, 91, 105);
+     margin-bottom: 10px;
+     padding: 7px;
+     border-radius: 15px;
+     font-size: 15px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.resultados {
+     position: relative;
+     width: 80%;
+     margin: 30px;
+     border: 2px solid #ff8f5b;
+     background: none;
+     padding: 5px;
+     text-align: justify ;
+     margin-top:  10px;
+     color: #6e6b6c;
+     padding: 10px 10px;
+     border-radius: 10px;
+}
